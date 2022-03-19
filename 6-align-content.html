@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Content</title>
+
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        .item{
+            background-color: orangered;
+            margin: 5px;
+            padding: 0 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .start{
+            align-content: flex-start;
+        }
+        .end{
+            align-content: flex-end;
+        }
+        .around{
+            align-content: space-around;
+        }
+        .SB{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h3>Stretch</h3>
+    <section class="container stretch">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur </div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.</div>
+    </section>
+
+    <h3>Center</h3>
+    <section class="container center">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur </div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.</div>
+    </section>
+
+    <h3>Flex-Start</h3>
+    <section class="container start">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur </div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.</div>
+    </section>
+
+    <h3>Flex-End</h3>
+    <section class="container end">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur </div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.</div>
+    </section>
+
+    <h3>Space-Around</h3>
+    <section class="container around">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur </div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.</div>
+    </section>
+
+    <h3>Space-Between</h3>
+    <section class="container SB">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur </div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.</div>
+    </section>
+</body>
+</html>
